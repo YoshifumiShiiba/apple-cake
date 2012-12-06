@@ -1,0 +1,17 @@
+{
+  "name" : "apple-cake" ,
+  "version" : "0.1.1" ,
+  "description" : "Utility for cake on coffee-script. More simply." ,
+  "tags" : ["build", "cake", "coffee-script", "node", "utility"] ,
+  "author" : "Yoshifumi Shiiba <arima02g@gmail.com>" ,
+  "repository" : {
+    "type" : "git" ,
+    "url" : "http://github.com/YoshifumiShiiba/apple-cake.git"
+  } ,
+  "bugs" : { "web" : "http://github.com/YoshifumiShiiba/apple-cake/issues" } ,
+  "licenses" : [{ 
+    "type" : "MIT" ,
+      "url" : "http://github.com/YoshifumiShiiba/apple-cake/raw/master/LICENSE"
+  }] ,
+  "main" : "./lib"
+}
