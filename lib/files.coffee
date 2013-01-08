@@ -16,7 +16,7 @@ class exports.Files
     for f in fs.readdirSync @dir
       regExp = new RegExp "^(\\w+)\\.#{@ext}$"
       if f.match regExp
-        @files.push "#{dir}#{RegExp.$1}"
+        @files.push "#{dir}#{RegExp.$1}.#{@ext}"
         @fileNames.push "#{RegExp.$1}"
 
   parseOptions: (options)->
@@ -38,7 +38,7 @@ class exports.Files
 
   watch: (callback)->
     console.log "Watching for changes :"
-    console.log "  #{file}.#{@ext}" for file in @files
+    console.log "  #{file}" for file in @files
 
     dir = @getDirectoryPath()
     for file in @fileNames
@@ -50,7 +50,7 @@ class exports.Files
 
   build: (callback)->
     console.log "Build :"
-    console.log "  #{file}.#{@ext}" for file in @files
+    console.log "  #{file}" for file in @files
 
     for file in @fileNames
       do (file)=>
